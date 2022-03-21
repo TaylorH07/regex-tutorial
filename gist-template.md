@@ -1,10 +1,13 @@
-# Title (replace with your title)
+# Title| Regex Tutorial
 
-Introductory paragraph (replace this with your text)
+## Introductory paragraph
+
+    - What is Regex? or in other words, what is Regular Expression? It is a sequence of characters that defines a specific search pattern. It is useful when extracting information from text, or to find certain patterns within a string. However, it is widely used to validate input.
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+- Matching an Email – /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
+  - A Regex that matches all possible emails does not exist, but one that matches 99.9% of emails does. It a good practice to validate emails using regex, this will limit the user input upfront. For example, the growing mandatory usage of gmail.com and yahoo.com, which may run into scalability issues.
 
 ## Table of Contents
 
@@ -24,25 +27,48 @@ Briefly summarize the regex you will be describing and what you will explain. In
 
 ### Anchors
 
+    - Anchors are not used to match a character, however they are used to match a position before, in-between, or after characters. The caret ^ is used for the character before the string, the $ is used to match with the last character of the string.
+    - When there is a string with multiple lines, line are typically written first line\nsecond line (where \n indicates a line break). The ^ and $ and still be placed before and after the line-break (/n)
+
 ### Quantifiers
+
+    -
 
 ### OR Operator
 
+    -
+
 ### Character Classes
+
+    -
 
 ### Flags
 
+    -
+
 ### Grouping and Capturing
+
+    -
 
 ### Bracket Expressions
 
+    -
+
 ### Greedy and Lazy Match
+
+    -
 
 ### Boundaries
 
+    -
+
 ### Back-references
 
+    -
+
 ### Look-ahead and Look-behind
+
+    -
 
 ## Author
 
