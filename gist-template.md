@@ -58,31 +58,42 @@
         - d generates indices for substring matches
         - g global search
         - i case in-sensitive search
+        - m Multi line search
 
 ### Grouping and Capturing
 
-    -
+    - Useful when needing to extract info from strings or data using the () characters. Will be able to access their values when using an index on the result of the match.
+    EX: (?<foo>...) will be able to retireve group values using a match result like a dictionary where the keys will be the name of each group
 
 ### Bracket Expressions
 
-    -
+    - Is either a matcing list expression or a non matching list expression
+        - EX:
+        - [a-fA-F0-9]      a string that represents a single hexadecimal digit
+        - [0-9]%           a string that has a character from 0 to 9 before a % sign
+        - [^a-zA-Z]        a string that has not a letter from a to z or from A to Z. In this case the ^ is used as negation of the expression
 
 ### Greedy and Lazy Match
 
-    -
+    - The greedy quantifiers are ( * + {}). The ? is what makes the quantifiers lazy
+        -EX: <.+?>
 
 ### Boundaries
 
-    -
+    - Performed with the \b and \B characters. \b represents an anchor like caret (is similar to $ and ^ characters) matching positions where one side is a word character and the other side is not a word character. \B matches all positions where \b doesnt match
+        - \babc\b          performs a "whole words only"
+        - \Babc\B          matches only if the pattern is fully surrounded by word characters
 
 ### Back-references
 
-    -
+    - Match the same text as previously matched by a capturing group. By putting the opening tag into a backreference, we can reuse the name of the tag for the closing tag. <([A-Z][A-Z0-9]*)\b[^>]*>.*?</\1>
 
 ### Look-ahead and Look-behind
 
-    -
+    - Also called a "lookaround", are zero-length assertions just like beginning and end anchors. Lookarounds actually match up the characters, but then gives up the match, only to return: match or no match
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+A short section about the author with a link to the author's GitHub profile:
+
+https://github.com/TaylorH07
