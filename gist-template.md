@@ -32,7 +32,11 @@
 
 ### Quantifiers
 
-    -
+    - When encountered in a regular expression pattern, the regular expression engine interprets the *, +, ?, {, and } characters as quantifiers or part of quantifier constructs unless they are included in a character class.
+        - The ? is a greedy quantifier matches the preceding element 0 or 1 time, which is equal to {0,1}
+        - The {n} is a greedy quantifier that matches the n times, the lazy quantifier for this is {n}?. EX: the regular expression will look like  \ban?\b
+        - The + is a greedy quantifier that matches a preceding element 1 or more times, which is equal to {1, }. EX: the regular expression will look like  \ban+\w*?\b
+        - The * is a greedy quantifier that matches the preceding element zero or more times, it is equivalent to {0, }
 
 ### OR Operator
 
