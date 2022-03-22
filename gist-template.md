@@ -94,6 +94,9 @@
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile:
+A short section about the author with a link to the author's GitHub profile.
+
+About Me:
+Hello Everyone, I am a beginner coder from Dallas, Tx. I am obtaining the necessary knowledge and skills to become a more efficient coder through the SMU Coding Boot Camp. In the future, I plan on gaining the title of a software engineer at a top tier tech company.
 
 https://github.com/TaylorH07
