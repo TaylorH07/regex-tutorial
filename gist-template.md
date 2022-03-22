@@ -40,15 +40,24 @@
 
 ### OR Operator
 
-    -
+    - Grouping and alternation are core features of every modern regular expression library. When the or-operator is used, a user can provide as many terms as desired as long as they are separated with the | character.
+        - EX: ^I like (cats|birds), but not (bears|giraffes).$ could match any of the the follow string:
+                        I like cats, but not bears.
+                        I like cats, but not giraffes.
+                        I like birds, but not bears.
+                        I like birds, but not giraffes.
 
 ### Character Classes
 
-    -
+    - Also called character sets, can tell the regex engine to match only one out of several characters. To do so, you can place as many characters in between square brackets.
+    EX: [A-Za-z_][A-Za-z_0-9]
 
 ### Flags
 
-    -
+    - Flags are optional that allow functionality like global and case in-sensitive searching.
+        - d generates indices for substring matches
+        - g global search
+        - i case in-sensitive search
 
 ### Grouping and Capturing
 
