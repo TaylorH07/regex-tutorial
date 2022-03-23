@@ -81,12 +81,12 @@
 ### Boundaries
 
     - Performed with the \b and \B characters. \b represents an anchor like caret (is similar to $ and ^ characters) matching positions where one side is a word character and the other side is not a word character. \B matches all positions where \b doesnt match
-        - \babc\b          performs a "whole words only"
+        - \babc\b          performs whole word searches
         - \Babc\B          matches only if the pattern is fully surrounded by word characters
 
 ### Back-references
 
-    - Match the same text as previously matched by a capturing group. By putting the opening tag into a backreference, we can reuse the name of the tag for the closing tag. <([A-Z][A-Z0-9]*)\b[^>]*>.*?</\1>
+    - Match the same text as previously matched by a capturing group. By putting the opening tag into a backreference, we can reuse the name of the tag for the closing tag. `<([A-Z][A-Z0-9]*)\b[^>]*>.*?</\1>`
 
 ### Look-ahead and Look-behind
 
